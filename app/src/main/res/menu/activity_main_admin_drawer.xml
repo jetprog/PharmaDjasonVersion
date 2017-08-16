@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_vente"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Vente" />
+        <item
+            android:id="@+id/nav_commande"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Liste Commande" />
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Liste Utilisateur" />
+        <item
+            android:id="@+id/nav_categorie"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Categorie Produit" />
+        <item
+            android:id="@+id/nav_unite"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Unite Entreprise" />
+        <item
+            android:id="@+id/nav_gestion_stock"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Gestion Stock" />
+    </group>
+
+    <item android:title="Rapport">
+        <menu>
+            <item
+                android:id="@+id/nav_rapport"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Liste Vente" />
+        </menu>
+    </item>
+
+    <item android:title="Parametre">
+        <menu>
+            <item
+                android:id="@+id/nav_deconnexion"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Deconnexion" />
+        </menu>
+    </item>
+
+</menu>

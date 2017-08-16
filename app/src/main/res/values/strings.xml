@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Egestion</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title"><u></u></string>
+    <string name="slide_1_desc">Transigeons en toute confiance \n accessible à tous à partir de partout</string>
+
+    <string name="slide_2_title"><u>Fonctionnalités</u></string>
+    <string name="slide_2_desc">eGestion a été conçu pour être simple à utiliser pour tous, tout en étant puissant en fonctionnalités.</string>
+
+    <string name="slide_3_title"><u>Inscription rapide</u></string>
+    <string name="slide_3_desc">Le processus de création de compte étant simple, vos clients, tout comme vous, serez prêt à utiliser eGestion en quelques minutes.</string>
+
+    <string name="slide_4_title"><u>Tarifs simples</u></string>
+    <string name="slide_4_desc">Créer un compte client est gratuit!\nPour les marchands, vous serez facturé à la fin du mois en fonction du nombre de transactions effectuées.</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="fPass"><u>Mot de passe oublié</u></string>
+    <string name="fCreer"><u>Creer Compte</u></string>
+    <string name="fIEntreprise"><u>Information Entreprise :</u></string>
+    <string name="fIProprietaire"><u>Information Propriétaire :</u></string>
+    <string name="fConnecter"><u>Connecter</u></string>
+    <string name="fAide"><u>Aide</u></string>
+    <string name="title_activity_main_superadmin">Super Administrateur</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_main_caissier">Caissier</string>
+    <string name="title_activity_main_admin">Administrateur</string>
+    <string name="tvDroitUser"><u>Droit Utilisateur :</u></string>
+    <string name="message_produit"><u>A remplir si produit sont en caisse et ont la même date d\'expiration</u></string>
+
+    <string-array name="droit_user">
+        <item>SUPER ADMINISTRATEUR</item>
+        <item>ADMINISTRATEUR</item>
+        <item>CAISSIER</item>
+    </string-array>
+    <string-array name="statutUser">
+        <item>ENABLED</item>
+        <item>DISABLED</item>
+    </string-array>
+</resources>

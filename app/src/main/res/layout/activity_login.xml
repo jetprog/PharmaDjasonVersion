@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:fitsSystemWindows="true"
+tools:context="com.etrouve.egestion.LoginActivity">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="56dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView android:src="@drawable/etrouve_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Email Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <EditText android:id="@+id/edtUserPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:digits="1234567890+"
+            android:hint="Telephone :" />
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Password Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <EditText android:id="@+id/edtPassUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Mot de passe :"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:text="CONNECTER"/>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvCreerCompte"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:onClick="onCreer"
+            android:text="@string/fCreer"
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvForgetPass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/fPass"
+            android:textAlignment="textEnd"
+            android:textSize="16sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+    <TextView android:id="@+id/tvInformation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:drawableBottom="@drawable/ic_information"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:textSize="16sp"/>
+</LinearLayout>
+</ScrollView>

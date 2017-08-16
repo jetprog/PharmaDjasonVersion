@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:fitsSystemWindows="true"
+tools:context="com.etrouve.egestion.CreerCompteActivity">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="56dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView android:src="@drawable/etrouve_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Information pharmacie"
+        android:textAlignment="textStart"
+        android:textSize="16sp" />
+
+    <!-- Email Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <EditText android:id="@+id/edtNomEnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Nom pharmacie :" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <EditText android:id="@+id/edtTelephoneEnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:digits="1234567890+"
+            android:hint="Telephone pharmacie :" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <EditText android:id="@+id/edtEmailEnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email pharmacie :" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <EditText android:id="@+id/edtAdresseEnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:hint="Adresse pharmacie :" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical|center_horizontal|start">
+    </android.support.v7.widget.AppCompatSpinner>
+
+    <!-- Password Label -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/fIProprietaire"
+        android:textAlignment="textStart"
+        android:textSize="16sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <EditText android:id="@+id/edtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Nom Complet :"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <EditText android:id="@+id/edtUserPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:digits="1234567890+"
+            android:hint="Telephone :"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <EditText android:id="@+id/edtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Mot de passe :"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <EditText android:id="@+id/edtConfirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Confirmer Mot de passe :"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnEnregistrer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:text="ENREGISTRER"/>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/fConnecter"
+            android:onClick="onConnecter"
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvAide"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:onClick="onAide"
+            android:text="@string/fAide"
+            android:textAlignment="textEnd"
+            android:textSize="16sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</LinearLayout>
+</ScrollView>

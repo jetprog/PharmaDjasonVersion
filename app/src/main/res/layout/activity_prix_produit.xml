@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+    <ProgressBar
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pull To Refresh"
+        android:textSize="20sp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:id="@+id/tvPullRefresh"
+        android:fontFamily="@string/abc_font_family_body_1_material"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/progressBar">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvUnitePrix" />
+
+        <!-- Intent i = getIntent();
+        jsonProduit=i.getStringExtra("objProduit");
+        Gson gson = new Gson();
+        Produit_info objProduit = gson.fromJson(jsonProduit, Produit_info.class);
+        objProduit.getNom_produit();
+        -->
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

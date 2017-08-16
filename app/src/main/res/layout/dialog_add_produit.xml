@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <EditText android:id="@+id/edtNomProduit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Nom Produit :"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <EditText android:id="@+id/edtExpProduit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="1234567890/"
+                android:inputType="textPersonName"
+                android:hint="Date Expiration : (jj/mm/aaaa)"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <EditText android:id="@+id/edtQteProduit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:digits="1234567890"
+                android:hint="Quantité produit par caisse :"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/message_produit"
+                android:textAlignment="center" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <EditText android:id="@+id/edtQteCaisse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:digits="1234567890"
+                    android:hint="Quantité Caisse :"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <EditText android:id="@+id/edtLimitProduit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:digits="1234567890"
+                android:hint="Limit Alerte Produit :"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <EditText android:id="@+id/edtPrixAchatProduit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:digits="1234567890"
+                android:hint="Prix Achat Produit :"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnAddProduit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="AJOUTER"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <EditText android:id="@+id/edtIdentifiantStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Identifiant Stock :"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <EditText android:id="@+id/edtMontantTotalStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:digits="1234567890"
+                android:hint="Montant Total Achat :"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <EditText android:id="@+id/edtDateStock"
+                android:layout_width="match_parent"
+                android:digits="1234567890/"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Date achat (JJ/MM/AAAA):"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <EditText android:id="@+id/edtDescStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Description Stock :"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnEnregistrerStock"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="ENREGISTRER"/>
+
+    </LinearLayout>
+</ScrollView>
